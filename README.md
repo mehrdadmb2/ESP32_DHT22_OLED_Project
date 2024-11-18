@@ -10,14 +10,19 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/mehrdadmb2/ESP32_DHT22_OLED_Project)
 ![GitHub repo size](https://img.shields.io/github/repo-size/mehrdadmb2/ESP32_DHT22_OLED_Project)
 
+---
+
 ## 📜 Introduction
 
 This project is a simple yet powerful **IoT Temperature and Humidity Monitor** designed using:
-- **ESP32** (for processing and WiFi communication)
-- **DHT22** (for temperature and humidity sensing)
-- **OLED Display** (for displaying data locally)
 
-It captures the ambient temperature and humidity, displays them on an OLED screen, and sends the data to a remote server over WiFi. This project is perfect for beginners and intermediate developers looking to explore IoT and embedded systems.
+![Board](https://img.shields.io/badge/Board-ESP32-%2344CC11?style=plastic&logo=esp32&logoColor=white)  
+![Sensor](https://img.shields.io/badge/Sensor-DHT22-%23FFCC00?style=plastic&logo=sensor&logoColor=black)  
+![Display](https://img.shields.io/badge/Display-OLED-%237D7D7D?style=plastic&logo=display&logoColor=white)
+
+It captures the ambient temperature and humidity, displays them on an OLED screen, and sends the data to a remote server over WiFi. This project is perfect for:
+- 🌟 **Beginners** exploring IoT.
+- 🚀 **Intermediate developers** building embedded systems.
 
 ---
 
@@ -32,19 +37,22 @@ It captures the ambient temperature and humidity, displays them on an OLED scree
 - 🌐 **WiFi-enabled**: Send temperature and humidity data to a remote server.
 - 📟 **Real-time Display**: View readings instantly on an OLED screen.
 - 🔧 **Customizable**: Easily adjust sensor pins, server URL, and WiFi credentials.
-- 🔋 **Low Power**: Optimized for power efficiency, ideal for IoT deployments.
+- 🔋 **Low Power**: Optimized for IoT deployments.
+
+![Code](https://img.shields.io/badge/Code-Arduino%20C-%234078D7?style=plastic&logo=arduino&logoColor=white)  
+![Connectivity](https://img.shields.io/badge/Connectivity-WiFi-%230077B5?style=plastic&logo=wifi&logoColor=white)
 
 ---
 
 ## 🛠️ Components
 
-| **Component**         | **Description**              | **Quantity** |
-|-----------------------|-----------------------------|--------------|
-| ESP32                 | WiFi-enabled microcontroller | 1            |
-| DHT22                 | Temperature & Humidity Sensor| 1            |
-| OLED Display (I2C)    | 128x64 Pixels                | 1            |
-| Jumper Wires          | Male-to-Male/Female-to-Male  | As needed    |
-| Breadboard            | For prototyping             | 1            |
+| **Component**         | **Description**               | **Quantity** | **Badge**                                |
+|-----------------------|------------------------------|--------------|------------------------------------------|
+| ESP32                 | WiFi-enabled microcontroller | 1            | ![Board](https://img.shields.io/badge/Board-ESP32-%2344CC11?style=plastic&logo=esp32&logoColor=white) |
+| DHT22                 | Temperature & Humidity Sensor| 1            | ![Sensor](https://img.shields.io/badge/Sensor-DHT22-%23FFCC00?style=plastic&logo=sensor&logoColor=black) |
+| OLED Display (I2C)    | 128x64 Pixels                 | 1            | ![Display](https://img.shields.io/badge/Display-OLED-%237D7D7D?style=plastic&logo=display&logoColor=white) |
+| Jumper Wires          | Male-to-Male/Female-to-Male   | As needed    | ![Cables](https://img.shields.io/badge/Wires-Jumper-%23FF6347?style=plastic&logo=wireguard&logoColor=black) |
+| Breadboard            | For prototyping              | 1            | ![Breadboard](https://img.shields.io/badge/Tools-Breadboard-%23F9D342?style=plastic&logo=tools&logoColor=black) |
 
 ---
 
@@ -67,17 +75,19 @@ It captures the ambient temperature and humidity, displays them on an OLED scree
 Follow these steps to set up the project:
 
 ### **1. Clone the Repository**
+![Git](https://img.shields.io/badge/Command-Git-%23F1502F?style=plastic&logo=git&logoColor=white)
 ```bash
 git clone https://github.com/mehrdadmb2/ESP32_DHT22_OLED_Project.git
 cd ESP32_DHT22_OLED_Project
 ```
 
 ### **2. Install Required Libraries**
-Open Arduino IDE and install the following libraries via **Library Manager** (`Sketch > Include Library > Manage Libraries`):
-- **Adafruit GFX**
-- **Adafruit SSD1306**
-- **DHT sensor library**
-- **Adafruit Unified Sensor**
+- Open Arduino IDE.  
+- Install the following libraries via **Library Manager** (`Sketch > Include Library > Manage Libraries`):  
+  - **Adafruit GFX**  
+  - **Adafruit SSD1306**  
+  - **DHT sensor library**  
+  - **Adafruit Unified Sensor**  
 
 ### **3. Open the Code**
 - Open the file `iot_temperature_humidity.ino` in Arduino IDE.
@@ -91,6 +101,7 @@ const char* serverURL = "http://your-server.com/api"; // Replace with your serve
 ```
 
 ### **5. Upload Code**
+![Upload](https://img.shields.io/badge/Step-Upload%20Code-%234CC417?style=plastic&logo=codefactor&logoColor=white)
 - Select the correct **Board** and **Port** (`Tools > Board`).
 - Click the **Upload** button.
 
@@ -116,12 +127,14 @@ const char* serverURL = "http://your-server.com/api"; // Replace with your serve
 ## 🖥️ Example Output
 
 ### **OLED Display**
+![OLED Example](https://img.shields.io/badge/OLED%20Output-Example-%234DD0E1?style=plastic&logo=display&logoColor=black)
 ```
 Temp: 25.3 C
 Humidity: 60.5 %
 ```
 
 ### **Serial Monitor**
+![Serial Monitor](https://img.shields.io/badge/Monitor-Serial%20Output-%2345A1FF?style=plastic&logo=logseq&logoColor=white)
 ```
 WiFi connected!
 Temp: 25.3 C
@@ -152,6 +165,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🤝 Contributing
 
+![Contribution](https://img.shields.io/badge/Contribute-Welcome-%23FF6F61?style=plastic&logo=github&logoColor=white)  
 Contributions are welcome! Feel free to submit issues, fork the repository, or open a pull request.
 
 ---
@@ -166,7 +180,9 @@ Special thanks to:
 
 ## 📊 Badges
 
-![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmehrdadmb2%2FESP32_DHT22_OLED_Project&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=visits&edge_flat=false)
+![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmehrdadmb2%
+
+2FESP32_DHT22_OLED_Project&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=visits&edge_flat=false)
 ![GitHub license](https://img.shields.io/github/license/mehrdadmb2/ESP32_DHT22_OLED_Project)
 ![GitHub stars](https://img.shields.io/github/stars/mehrdadmb2/ESP32_DHT22_OLED_Project?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/mehrdadmb2/ESP32_DHT22_OLED_Project?style=social)
@@ -176,12 +192,5 @@ Special thanks to:
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/mehrdadmb2/ESP32_DHT22_OLED_Project)
 ![GitHub repo size](https://img.shields.io/github/repo-size/mehrdadmb2/ESP32_DHT22_OLED_Project)
 ```
-
----
-
-### ویژگی‌های این فایل:
-- **استفاده از بدج‌ها**: اطلاعات پروژه به‌صورت دیداری جذاب‌تر نمایش داده می‌شود.
-- **کامل و ساختارمند**: همه مراحل از نصب تا استفاده به‌خوبی توضیح داده شده‌اند.
-- **اشاره به خطاهای ممکن**: برای رفع مشکلات احتمالی بخش عیب‌یابی اضافه شده است.
-
-در صورت نیاز به تغییرات بیشتر، اطلاع دهید! 😊
+<!--
+این نسخه بهبود یافته شامل بدج‌های جذاب‌تر و ساختاری مرتب‌تر است. اگر نیاز به تغییر بیشتری دارید، اطلاع دهید! 😊
