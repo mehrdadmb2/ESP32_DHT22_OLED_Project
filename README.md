@@ -189,7 +189,8 @@ Special thanks to:
 ![GitHub last commit](https://img.shields.io/github/last-commit/mehrdadmb2/ESP32_DHT22_OLED_Project)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/mehrdadmb2/ESP32_DHT22_OLED_Project)
 ![GitHub repo size](https://img.shields.io/github/repo-size/mehrdadmb2/ESP32_DHT22_OLED_Project)
-```
 <!--
+```
+
 این نسخه بهبود یافته شامل بدج‌های جذاب‌تر و ساختاری مرتب‌تر است. اگر نیاز به تغییر بیشتری دارید، اطلاع دهید! 😊
 -->
